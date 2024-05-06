@@ -11,7 +11,7 @@ Before running the scripts, ensure you have the following:
 ## Installation
 
 1. **Clone the Repository**
-   *git clone https://github.com/yourusername/yourrepositoryname.git
+   *git clone https://github.com/sumeer1/BiasToSimplicity.git
 
    
 2. **Set Up MATLAB Environment**

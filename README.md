@@ -33,12 +33,12 @@ To run the scripts and generate the required data and plots, execute the followi
 2. **Run the Automation Script**
    On Linux or Windows:
    ```bash
-   chmod +x run_models.sh
-   ./run_models.sh
+   chmod +x run_script.sh
+   ./run_script.sh
    ```
    On Windows, use:
    ```bat
-   run_models.bat
+   run_script.bat
    ```
 
    This script will automatically call the necessary MATLAB scripts (e.g., `Tyson1991`) to process each model, generate integration data, analyze this data, and produce the plots.

@@ -17,6 +17,7 @@ Before you begin, ensure you have the following installed:
    ```
 
 2. **Setup MATLAB Path**
+   
    Ensure that MATLAB can access the scripts by adding the repository's directory to your MATLAB path:
    ```matlab
    addpath(genpath('path_to_repository'));

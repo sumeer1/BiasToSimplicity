@@ -1,36 +1,57 @@
-# BiasToSimplicity
+# Bias to Simplicity in Systems Biology Models
 
-This repository contains MATLAB scripts for generating integration data, analyzing this data, and producing frequency versus complexity plots for the Tyson 1991 model in systems biology. The scripts automate the process of integrating both standard and perturbed models, followed by a detailed analysis.
+This repository contains MATLAB scripts designed to automate the generation of integration data for standard and perturbed models, analyze this data, and generate frequency versus complexity plots as part of a systems biology study.
 
 ## Prerequisites
 
-Before running the scripts, ensure you have the following:
-- MATLAB R2022b or later installed on your system.
-- Access to MATLAB's command line interface for executing scripts.
+Before you begin, ensure you have the following installed:
+- [MATLAB](https://www.mathworks.com/products/matlab.html) (R2022b or later)
+- [Statistics and Machine Learning Toolbox](https://www.mathworks.com/products/statistics.html) for MATLAB
 
 ## Installation
 
 1. **Clone the Repository**
-   *git clone https://github.com/sumeer1/BiasToSimplicity.git
+   ```bash
+   git clone https://github.com/yourusername/bias-to-simplicity.git
+   cd bias-to-simplicity
+   ```
 
-   
-2. **Set Up MATLAB Environment**
-Run the `setup.m` script to add necessary folders to your MATLAB path. This step ensures that all functions and scripts are accessible to MATLAB.
-
-Open MATLAB and run:
-```matlab
-run('setup.m')
-```
+2. **Setup MATLAB Path**
+   Ensure that MATLAB can access the scripts by adding the repository's directory to your MATLAB path:
+   ```matlab
+   addpath(genpath('path_to_repository'));
+   ```
 
 ## Usage
 
-To generate and analyze data, follow these steps:
+To run the scripts and generate the required data and plots, execute the following steps:
 
-Run the Main Script
-You can execute the main script directly from MATLAB's command line interface:
-```
-matlab -batch "Tyson1991"
-```
+1. **Set Up Your Environment**
+   Make sure all required MATLAB paths are set correctly as mentioned in the installation section.
+
+2. **Run the Automation Script**
+   On Linux or macOS:
+   ```bash
+   chmod +x run_models.sh
+   ./run_models.sh
+   ```
+   On Windows, use:
+   ```bat
+   run_models.bat
+   ```
+
+   This script will automatically call the necessary MATLAB scripts (e.g., `Tyson1991`) to process each model, generate integration data, analyze this data, and produce the plots.
+
+## Scripts Overview
+
+- `Tyson1991.m`: Main script for the Tyson 1991 model. It orchestrates the workflow by calling the following scripts:
+  - `get_tyson_traj_data.m`: Generates integration data for both standard and perturbed models.
+  - `main_script.m`: Analyzes the integration data and creates frequency vs. complexity plots.
+
+
+
+
+
 
 
 

@@ -31,7 +31,7 @@ To run the scripts and generate the required data and plots, execute the followi
    Make sure all required MATLAB paths are set correctly as mentioned in the installation section.
 
 2. **Run the Automation Script**
-   On Linux or macOS:
+   On Linux or Windows:
    ```bash
    chmod +x run_models.sh
    ./run_models.sh
